@@ -1,0 +1,29 @@
+.container {
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.container-notification {
+  position: relative;
+  width: 42px;
+
+  .badge {
+    position: absolute;
+    top: -8px;
+    right: 4px;
+    border-radius: 100%;
+    background-color: red;
+    z-index: 5;
+    padding: 6px;
+  }
+
+  ion-icon {
+    color: white;
+    font-size: 26px !important;
+  }
+}
+
+.title {
+  color: white;
+  margin-top: 0!important;
+}
