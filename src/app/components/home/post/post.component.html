@@ -1,0 +1,22 @@
+<ion-card>
+  <ion-card-header>
+    <div class="d-flex align-items-center">
+      <ion-avatar class="container-user-image">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+      <div class="d-flex flex-column align-items-start justify-content-center container-post-detail">
+        <span>{{post.userDto.firstName}} {{post.userDto.lastName}}</span>
+        <span class="d-flex align-items-center">{{post.createdAt}} <ion-icon name="navigate-circle-outline"></ion-icon> {{post.currentCity}}</span>
+      </div>
+    </div>
+  </ion-card-header>
+
+  <ion-card-content>
+    <h3 class="post-title">{{post.title}}</h3>
+    <span class="post-description">{{post.description}}</span>
+    <!-- <div class="container-user-action d-flex justify-content-start align-items-center mt-3">
+      <ion-icon name="heart" [ngClass]="post.liked ? 'liked' : ''"></ion-icon>
+      <span class="number-of-likes">32</span>
+    </div> -->
+  </ion-card-content>
+</ion-card>

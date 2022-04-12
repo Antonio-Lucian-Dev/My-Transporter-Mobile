@@ -1,0 +1,30 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Test",
+      "description": "Test2",
+      "createdAt": "2021-02-22",
+      "currentCity": "Roma",
+      "userDto": {
+        "id": "34",
+        "firstName": "Alex",
+        "lastName": "Andrei",
+        "userRole": "ADMIN"
+      }
+    },
+    {
+      "id": "2",
+      "title": "Test",
+      "description": "Keep close to Nature's heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean.",
+      "createdAt": "2021-02-22",
+      "currentCity": "Milano",
+      "userDto": {
+        "id": "34",
+        "firstName": "Alex",
+        "lastName": "Andrei",
+        "userRole": "ADMIN"
+      }
+    }
+  ]
+}

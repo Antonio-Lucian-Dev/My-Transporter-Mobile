@@ -6,12 +6,19 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import { FilterComponent } from './filter/filter.component';
+import { PostComponent } from './post/post.component';
+import { ListItemProfileComponent } from './list-item-profile/list-item-profile.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-    TopNavComponent
+    TopNavComponent,
+    FilterComponent,
+    PostComponent,
+    ListItemProfileComponent,
+    ListItemProfileComponent
   ],
   imports: [
     CommonModule,

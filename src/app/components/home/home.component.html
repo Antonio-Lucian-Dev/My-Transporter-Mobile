@@ -1,1 +1,20 @@
 <app-top-nav></app-top-nav>
+<div class="container-tabs d-flex align-items-center justify-content-center">
+  <mat-tab-group [selectedIndex]="0">
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <ion-icon name="home-outline"></ion-icon>
+      </ng-template>
+      <div class="container-home">
+        <app-filter (filterData)="filterPosts($event)"></app-filter>
+        <app-post [post]="post" *ngFor="let post of posts"></app-post>
+      </div>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <ion-icon name="person-circle-outline"></ion-icon>
+      </ng-template>
+      <app-list-item-profile></app-list-item-profile>
+    </mat-tab>
+  </mat-tab-group>
+</div>

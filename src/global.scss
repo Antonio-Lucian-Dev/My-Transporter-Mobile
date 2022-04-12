@@ -24,3 +24,27 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+app-home {
+  justify-content: start!important;
+}
+
+.container-tabs {
+  mat-tab-group {
+    width: 100%;
+  }
+  .mat-ink-bar {
+    background-color: white!important;
+    border-radius: 5px;
+    height: 4px!important;
+  }
+
+  .mat-tab-label-container {
+    justify-content: center;
+  }
+
+  .mat-tab-list {
+    flex-grow: initial;
+  }
+}
