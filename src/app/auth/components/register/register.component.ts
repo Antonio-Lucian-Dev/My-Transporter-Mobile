@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthenticationService } from '../../services/authentication.service';
 
 @Component({
   selector: 'app-register',
@@ -18,7 +20,7 @@ export class RegisterComponent implements OnInit {
 
   isSubmitted = false;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private authService: AuthenticationService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -28,6 +30,7 @@ export class RegisterComponent implements OnInit {
     console.log(this.userForm.valid);
     if(this.userForm.valid) {
       console.log(this.userForm.value);
+      this.authService.register(this.userForm.value).subscribe(() => this.router.navigate(['/login']));
     }
   }
 

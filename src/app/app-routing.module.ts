@@ -11,7 +11,6 @@ const routes: Routes = [
   { path: 'home', loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule) },
   { path: 'info', loadChildren: () => import('./components/home/info/info.module').then(m => m.InfoModule) },
   { path: 'userProfile', loadChildren: () => import('./components/home/user-profile/user-profile.module').then(m => m.UserProfileModule) },
-  { path: 'notification-list', loadChildren: () => import('./components/home/notification-list/notification-list.module').then(m => m.NotificationListModule) },
 ];
 @NgModule({
   imports: [

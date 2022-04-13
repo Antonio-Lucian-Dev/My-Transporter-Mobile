@@ -1,0 +1,56 @@
+
+.container-row {
+  min-height: 100vh;
+}
+
+.container-inputs {
+  transform: translate(0px, -11%);
+}
+
+.container-input {
+  height: 70px;
+}
+
+.title {
+  line-height: 2rem;
+}
+
+.subtitle {
+  color: #FF8C32;
+  font-weight: bold;
+}
+
+.input-user {
+  background-color: aliceblue;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid;
+  padding-left: 10px!important;
+}
+
+
+.privacy-link {
+  color: blue;
+}
+
+.btn-register {
+  padding: 15px 17px;
+  background-color: #FF8C32;
+  border-radius: 5px;
+  color: #ffff;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.error-msg {
+  color: red;
+  text-align: start;
+}
+
+@media only screen and (max-width: 375px) {
+  .container-inputs {
+    transform: translate(0px, -4%);
+  }
+}

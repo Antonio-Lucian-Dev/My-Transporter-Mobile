@@ -1,1 +1,28 @@
-<p>login works!</p>
+<div class="container-row d-flex flex-column justify-content-around align-items-center">
+  <ion-row class="d-flex justify-content-center">
+    <ion-col size="12" class="ion-align-self-center">
+      <ion-text class="d-flex justify-content-center" color="secondary">
+        <h2 class="title">Bine ai venit in <br /> <span class="subtitle">My Transporter</span></h2>
+      </ion-text>
+    </ion-col>
+  </ion-row>
+  <form [formGroup]="userForm" (ngSubmit)="onFormSubmit()" class="container-inputs w-100">
+    <ion-row class="d-flex justify-content-center">
+      <ion-col size="10" class="mt-3 container-input">
+        <ion-input type="email" class="input-user" [ngClass]="isSubmitted && errorControl.email.errors?.required ? 'error' : ''" required formControlName="email" placeholder="Email"></ion-input>
+        <span class="error-msg" *ngIf="isSubmitted && errorControl.email.errors?.email">
+         Te rugam sa introduci un mail valid
+        </span>
+      </ion-col>
+      <ion-col size="10" class="mt-3 container-input">
+        <ion-input type="password" class="input-user" [ngClass]="isSubmitted && errorControl.password.errors?.required ? 'error' : ''" required formControlName="password" placeholder="Parola"></ion-input>
+        <span class="error-msg" *ngIf="isSubmitted && errorControl.password.errors?.minlength">
+          Parola trebuie sa fie lunga minim 5 caractere
+        </span>
+      </ion-col>
+      <ion-col size="10" class="mt-3 d-flex justify-content-center">
+        <button class="btn-register" type="submit">Intra</button>
+      </ion-col>
+    </ion-row>
+  </form>
+</div>
