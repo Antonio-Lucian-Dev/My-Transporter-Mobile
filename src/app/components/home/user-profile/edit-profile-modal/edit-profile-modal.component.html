@@ -1,0 +1,43 @@
+<div class="container-title mb-3 d-flex justify-content-between align-items-center">
+  <h2 mat-dialog-title>Editeaza Profilul</h2>
+  <ion-icon name="close-outline" (click)="closeModal()"></ion-icon>
+</div>
+<mat-divider class="mat-divider mat-divider-horizontal" role="separator"></mat-divider>
+<form [formGroup]="userProfile" (ngSubmit)="updateProfile()">
+  <mat-dialog-content class="mb-3">
+    <ion-row class="d-flex justify-content-center">
+      <ion-col class="mt-3 container-input" size="5">
+        <ion-input class="input-user" [ngClass]="isSubmitted && errorControl.firstName.errors?.required ? 'error' : ''"
+          formControlName="firstName" required placeholder="Nume"></ion-input>
+      </ion-col>
+      <ion-col size="5" class="mt-3 container-input">
+        <ion-input class="input-user" [ngClass]="isSubmitted && errorControl.lastName.errors?.required ? 'error' : ''"
+          formControlName="lastName" required placeholder="Prenume"></ion-input>
+      </ion-col>
+      <ion-col size="10" class="mt-3 container-input">
+        <ion-input type="date" class="input-user"
+          [ngClass]="isSubmitted && errorControl.birthday.errors?.required ? 'error' : ''" required
+          formControlName="birthday"></ion-input>
+      </ion-col>
+      <ion-col size="10" class="mt-3 container-input">
+        <mat-form-field appearance="fill">
+          <mat-select placeholder="Tara" formControlName="country" required>
+            <mat-option value="Italia">Italia</mat-option>
+            <mat-option value="Romania">Romania</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </ion-col>
+      <ion-col size="10" class="mt-3 container-input">
+        <ion-input type="text" class="input-user"
+          [ngClass]="isSubmitted && errorControl.city.errors?.required ? 'error' : ''" required formControlName="city"
+          placeholder="Oras"></ion-input>
+      </ion-col>
+    </ion-row>
+
+  </mat-dialog-content>
+  <mat-divider class="mat-divider mat-divider-horizontal" role="separator"></mat-divider>
+  <mat-dialog-actions>
+    <button class="btn-update-modal" type="submit">Actualizeaza</button>
+    <button class="btn-close-modal" mat-dialog-close type="button">Inchide</button>
+  </mat-dialog-actions>
+</form>

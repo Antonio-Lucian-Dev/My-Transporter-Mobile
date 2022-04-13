@@ -1,3 +1,4 @@
+import { NotificationListComponent } from './notification-list/notification-list.component';
 import { SharedModule } from './../../shared/shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -9,6 +10,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { FilterComponent } from './filter/filter.component';
 import { PostComponent } from './post/post.component';
 import { ListItemProfileComponent } from './list-item-profile/list-item-profile.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 @NgModule({
@@ -18,13 +20,15 @@ import { ListItemProfileComponent } from './list-item-profile/list-item-profile.
     FilterComponent,
     PostComponent,
     ListItemProfileComponent,
-    ListItemProfileComponent
+    ListItemProfileComponent,
+    NotificationListComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
     SharedModule,
-    MatTabsModule
+    MatTabsModule,
+    MatMenuModule
   ]
 })
 export class HomeModule { }

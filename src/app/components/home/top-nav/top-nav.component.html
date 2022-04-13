@@ -3,9 +3,9 @@
     <h2 class="title">My Transporter</h2>
   </ion-col>
   <ion-col size="4" class="d-flex align-items-center justify-content-end">
-    <div class="container-notification">
-      <div class="badge">10</div>
-      <ion-icon name="notifications-outline"></ion-icon>
+    <div class="container-notification" *ngIf="checkNotificationNotRead().length > 0">
+      <div class="badge">{{checkNotificationNotRead().length}}</div>
+      <ion-icon name="notifications-outline" routerLink="/notifications"></ion-icon>
     </div>
   </ion-col>
 </ion-row>

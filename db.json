@@ -26,5 +26,67 @@
         "userRole": "ADMIN"
       }
     }
+  ],
+  "userAdminProfile": {
+    "id": "34",
+    "firstName": "Alex",
+    "lastName": "Andrei",
+    "email": "test@gmail.com",
+    "phoneNumber": "24345234345",
+    "birthday": "1996-03-11",
+    "userRole": "ADMIN",
+    "country": "Romania",
+    "city": "Bucuresti",
+    "followers": [
+      {
+        "id": "82",
+        "firstName": "Alina",
+        "lastName": "Mia",
+        "phoneNumber": "25345234345",
+        "userRole": "USER"
+      },
+      {
+        "id": "83",
+        "firstName": "Madalina",
+        "lastName": "Gwen",
+        "phoneNumber": "35345234345",
+        "userRole": "USER"
+      }
+    ]
+  },
+  "userProfile": {
+    "id": "39",
+    "firstName": "Maria",
+    "lastName": "Bia",
+    "email": "test@gmail.com",
+    "phoneNumber": "24345234345",
+    "birthday": "1996-03-11",
+    "userRole": "USER",
+    "country": "Italia",
+    "city": "Torino"
+  },
+  "notifications": [
+    {
+      "user": {
+        "id": "34",
+        "firstName": "Alex",
+        "lastName": "Andrei"
+      },
+      "title": "Test",
+      "createdAt": "2021-02-22",
+      "isNew": true,
+      "isRead": false
+    },
+    {
+      "user": {
+        "id": "34",
+        "firstName": "Alex",
+        "lastName": "Andrei"
+      },
+      "title": "A postat ceva",
+      "createdAt": "2021-02-22",
+      "isNew": false,
+      "isRead": true
+    }
   ]
 }

@@ -1,0 +1,44 @@
+.container-title {
+  h2 {
+    margin: 0px!important;
+  }
+  ion-icon {
+    font-size: 30px;
+  }
+}
+
+.input-user {
+  background-color: aliceblue;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid;
+  padding-left: 10px!important;
+}
+
+.btn-update-modal {
+  padding: 15px 17px;
+  background-color: #FF8C32;
+  border-radius: 5px;
+  color: #ffff;
+}
+
+.btn-close-modal {
+  padding: 15px 17px;
+  background-color: #3262ff;
+  border-radius: 5px;
+  color: #ffff;
+  margin-left: 10px;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.error-msg {
+  color: red;
+  text-align: start;
+}
+
+.select-country {
+  z-index: 9999;
+}
